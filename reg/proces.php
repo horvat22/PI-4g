@@ -5,7 +5,7 @@ $p = $_POST["http"];
 $s = $_POST["https"];
 $reg_mail = "/([A-Za-z]){1,5}[0-9]{1,5}@yahoo.com/";
 $reg_http = "/http:..www.([0-9]){1,9}.com/";
-$reg_https = "/http(s)?:\/\/www.([a-zA-Z[0-9]){1,9}.[a-z]{2,3}/";
+$reg_https = "/http(s)?:\/\/www.([a-zA-Z[0-9]){1,9}\.[a-z]{2,3}/";
 if (isset($mail) && preg_match($reg_mail, $mail)){
   echo "Validan"."<br>";
 }
